@@ -21,4 +21,4 @@ app.post \/write, (req, res) ->
 	res.end \OK
 	
 server = http.createServer app
-server.listen 3000
+server.listen process.env.PORT
